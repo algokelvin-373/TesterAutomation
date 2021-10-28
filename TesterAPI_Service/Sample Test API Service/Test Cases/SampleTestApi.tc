@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Just Sample. I learn it.</description>
+   <name>SampleTestApi</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e7add65b-40a8-4ab6-970f-7813bbd3e2bf</testCaseGuid>
+</TestCaseEntity>
