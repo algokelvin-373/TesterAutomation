@@ -23,3 +23,5 @@ WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'original_title', 'Venom: Let There Be Carnage')
 
+WS.verifyElementPropertyValue(response, 'vote_count', '1243')
+
