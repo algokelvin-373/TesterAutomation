@@ -17,4 +17,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Movie/Validate Movie Detail</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>fe2a2652-ca08-4a47-a7ac-a7cdea25df4e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Movie/Validate Movie Detail 2</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
