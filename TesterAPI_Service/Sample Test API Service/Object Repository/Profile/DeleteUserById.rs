@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetUserById</name>
+   <name>DeleteUserById</name>
    <tag></tag>
-   <elementGuidId>c68f2d8c-556d-42df-8d25-025274e0587c</elementGuidId>
+   <elementGuidId>ad6f909e-73a5-4ee1-a0e6-7f36a3ae5ebd</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -14,8 +14,8 @@
    <katalonVersion>8.1.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://5b75-114-125-111-189.ngrok.io/demo/profile/${id}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://5b75-114-125-111-189.ngrok.io/demo/delete?id=10</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -24,13 +24,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>10</defaultValue>
-      <description>ID User</description>
-      <id>da101f61-dd0b-4679-bbcb-93730a8b1ca9</id>
-      <masked>false</masked>
-      <name>id</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
