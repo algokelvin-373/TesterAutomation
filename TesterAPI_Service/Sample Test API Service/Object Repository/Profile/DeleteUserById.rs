@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description></description>
+   <description>This is for to delete user by Id</description>
    <name>DeleteUserById</name>
    <tag></tag>
-   <elementGuidId>ad6f909e-73a5-4ee1-a0e6-7f36a3ae5ebd</elementGuidId>
+   <elementGuidId>05c3d350-ef19-4c22-b573-330efdb0b053</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: []
+}</httpBodyContent>
+   <httpBodyType>form-data</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>multipart/form-data</value>
+   </httpHeaderProperties>
    <katalonVersion>8.1.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://5b75-114-125-111-189.ngrok.io/demo/delete?id=10</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://a2cf-182-1-106-201.ngrok.io/demo/delete?id=10</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
