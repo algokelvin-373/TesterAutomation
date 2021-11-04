@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This is validation for CRUD Users</description>
+   <name>Validation RD Users</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6ebc14c8-0743-4c6a-8de4-11c2fe70219d</testCaseGuid>
+</TestCaseEntity>
