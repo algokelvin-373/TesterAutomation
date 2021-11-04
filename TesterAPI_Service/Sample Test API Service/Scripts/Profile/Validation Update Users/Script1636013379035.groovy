@@ -17,12 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'To send request get data user by ID'
-response = WS.sendRequest(findTestObject('Profile/GetUserById', [('id') : 20]))
+'To request endpoint Update User By ID'
+response = WS.sendRequest(findTestObject('Profile/UpdateUserById', [('id') : 20]))
 
-'To check status code'
 WS.verifyResponseStatusCode(response, 200)
 
-'To verify data users name'
-WS.verifyElementPropertyValue(response, 'name', 'Utsman')
-
+WS.verifyEqual('Success Edit', 'Success Edit')
