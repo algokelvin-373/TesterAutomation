@@ -25,8 +25,8 @@
    <katalonVersion>8.1.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://a2cf-182-1-106-201.ngrok.io/demo/delete?id=10</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>http://localhost:8080/demo/delete?id=18</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

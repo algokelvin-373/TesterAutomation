@@ -15,7 +15,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://a2cf-182-1-106-201.ngrok.io/demo/profile/${id}</restUrl>
+   <restUrl>http://localhost:8080/demo/profile/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

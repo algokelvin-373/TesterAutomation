@@ -17,12 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'To send request get data user by ID'
-response = WS.sendRequest(findTestObject('Profile/GetUserById', [('id') : 18]))
+'To delete data user'
+responseDelete = WS.sendRequest(findTestObject('Profile/DeleteUserById'))
 
-'To check status code'
-WS.verifyResponseStatusCode(response, 200)
-
-'To verify data users name'
-WS.verifyElementPropertyValue(response, 'name', 'Utsman')
-
+'To check result response code from \'DeleteUserByid\''
+WS.verifyResponseStatusCode(responseDelete, 200)
