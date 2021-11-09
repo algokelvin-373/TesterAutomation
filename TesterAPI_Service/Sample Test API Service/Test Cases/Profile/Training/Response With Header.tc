@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This is a case study to request get all Data Users with Header Data</description>
+   <name>Response With Header</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d167f9c3-a2c3-4e64-bc11-59666b5006cc</testCaseGuid>
+</TestCaseEntity>
