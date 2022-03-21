@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CreateUser</name>
+   <name>GetAllUserWithHeader</name>
    <tag></tag>
-   <elementGuidId>fc140d20-381f-4a9d-86b4-7f9ff53b9219</elementGuidId>
+   <elementGuidId>2520dd56-d5a4-4025-9f45-40d27bd7cc32</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;:\&quot;${name}\&quot;,\n  \&quot;address\&quot;:\&quot;Karanganyar\&quot;,\n  \&quot;description\&quot;:\&quot;Android Developer\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>token</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>${token}</value>
    </httpHeaderProperties>
    <katalonVersion>8.1.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://localhost:8080/demo/add</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>http://localhost:8080/demo/allheader</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
