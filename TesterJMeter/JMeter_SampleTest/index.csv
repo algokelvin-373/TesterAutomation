@@ -1,0 +1,21 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1647932310886,80,Get Profile,200,,Thread Group 1-6,text,true,,281,140,6,6,http://localhost:8000/api/profile/detail?id=30,70,0,1
+1647932310793,173,Get Profile,200,,Thread Group 1-5,text,true,,281,140,6,6,http://localhost:8000/api/profile/detail?id=30,173,0,5
+1647932310792,173,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,281,140,6,6,null,173,5,5
+1647932310885,80,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,281,140,6,6,null,70,5,1
+1647932310690,282,Get Profile,200,,Thread Group 1-4,text,true,,281,140,6,6,http://localhost:8000/api/profile/detail?id=30,266,0,1
+1647932310689,282,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,281,140,6,6,null,266,2,1
+1647932310630,385,Get Profile,200,,Thread Group 1-3,text,true,,281,140,4,4,http://localhost:8000/api/profile/detail?id=30,384,0,51
+1647932310588,385,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,281,140,4,4,null,384,42,51
+1647932310631,397,Get Profile,200,,Thread Group 1-2,text,true,,281,140,3,3,http://localhost:8000/api/profile/detail?id=30,380,0,50
+1647932310503,397,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,281,140,3,3,null,380,129,50
+1647932310631,414,Get Profile,200,,Thread Group 1-1,text,true,,281,140,2,2,http://localhost:8000/api/profile/detail?id=30,412,0,50
+1647932310413,414,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,281,140,2,2,null,412,218,50
+1647932310987,66,Get Profile,200,,Thread Group 1-7,text,true,,281,140,1,1,http://localhost:8000/api/profile/detail?id=30,65,0,1
+1647932310985,66,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,281,140,1,1,null,65,3,1
+1647932311089,19,Get Profile,200,,Thread Group 1-8,text,true,,281,140,1,1,http://localhost:8000/api/profile/detail?id=30,17,0,3
+1647932311088,19,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,281,140,1,1,null,17,2,3
+1647932311192,16,Get Profile,200,,Thread Group 1-9,text,true,,281,140,1,1,http://localhost:8000/api/profile/detail?id=30,15,0,2
+1647932311191,16,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,281,140,1,1,null,15,1,2
+1647932311287,19,Get Profile,200,,Thread Group 1-10,text,true,,281,140,1,1,http://localhost:8000/api/profile/detail?id=30,19,0,1
+1647932311286,19,ProfileController,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,281,140,1,1,null,19,2,1
