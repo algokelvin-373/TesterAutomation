@@ -17,5 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://algokelvin-373.github.io/')
+'To open browser with Goolge Chrome'
+WebUI.openBrowser(GlobalVariable.URL)
+
+'Check Title Page Web'
+WebUI.verifyMatch(WebUI.getWindowTitle(), 'AlgoKelvin', false)
 
