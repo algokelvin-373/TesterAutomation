@@ -10,6 +10,10 @@
          <value>//a[contains(text(),'Blog')]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@href = 'blog.html' and (text() = 'Blog' or . = 'Blog')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>9a2f56ee-3265-44db-b4d2-457ae1cb08ec</webElementGuid>
+      <webElementGuid>a9d23c3a-9666-48f6-853c-d4cf402bdad0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>nav-link</value>
-      <webElementGuid>4b81fa8d-4e1b-4ed7-a254-e33d24b15e4b</webElementGuid>
+      <webElementGuid>072587b5-9d86-414a-bd02-852fb365ea96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>blog.html</value>
-      <webElementGuid>a1ef7caf-ac51-4e7f-8db3-b2084465e026</webElementGuid>
+      <webElementGuid>958caf92-c4dc-430f-aab2-d9727038d9e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Blog</value>
-      <webElementGuid>253678cc-85f2-4c42-b98d-9548e081476c</webElementGuid>
+      <webElementGuid>bcadbb81-d723-479f-9152-b801938513eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/header[@class=&quot;fixed-top&quot;]/nav[@class=&quot;navbar navbar-expand-sm&quot;]/div[@class=&quot;center&quot;]/ul[@class=&quot;nav nav-pills justify-content-center&quot;]/li[@class=&quot;nav-item&quot;]/a[@class=&quot;nav-link&quot;]</value>
-      <webElementGuid>ed3055a4-2646-41ee-9c07-1d7a36994eb8</webElementGuid>
+      <webElementGuid>2db04007-f9d0-460a-a510-28c721a40416</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Blog')]</value>
-      <webElementGuid>b15d35a5-de2b-4828-8670-e13f8b3a3d96</webElementGuid>
+      <webElementGuid>00cebb5d-39bd-4c39-8f8d-da8d7bf319ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::a[1]</value>
-      <webElementGuid>64fe70dd-fe89-4245-8458-7a4ed0b4e0c3</webElementGuid>
+      <webElementGuid>4a10634d-5214-4a6f-ac95-bd4c26cb69f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='GO INTERNATIONAL'])[1]/preceding::a[1]</value>
-      <webElementGuid>c504003c-21b2-4520-bd1b-93b09d312ec2</webElementGuid>
+      <webElementGuid>6f488403-6f9a-4e56-81ea-4a231b274f92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Basic Programming'])[1]/preceding::a[1]</value>
-      <webElementGuid>2f6c761a-7c3e-481b-b6bd-35101ebbf74b</webElementGuid>
+      <webElementGuid>a87f1afe-f54d-4dc9-afcc-2707c7df8c61</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Blog']/parent::*</value>
-      <webElementGuid>072fe094-ee2c-4001-b8fb-c57487f64100</webElementGuid>
+      <webElementGuid>a22d743c-182d-4a6e-b463-d8e0d41ea7c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'blog.html')]</value>
-      <webElementGuid>85221e6a-69c8-4bd2-843f-3c5e0f185faa</webElementGuid>
+      <webElementGuid>1ad1c42e-78b2-4c9e-9e5d-101c80c4cfa3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/a</value>
-      <webElementGuid>4a0635b1-9bb1-437b-ba63-b497e685a224</webElementGuid>
+      <webElementGuid>1da4a862-b841-4ab8-a1cc-f5e875957566</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = 'blog.html' and (text() = 'Blog' or . = 'Blog')]</value>
-      <webElementGuid>53653c08-af1f-467f-b658-f749b67a840d</webElementGuid>
+      <webElementGuid>4296b0e6-9b3a-4c97-b88c-c989cab573de</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
