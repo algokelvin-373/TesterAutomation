@@ -29,3 +29,7 @@ WebUI.click(findTestObject('Page_AlgoKelvin/page_blog'))
 'Check Title Web \'Blog Page\''
 WebUI.verifyMatch(WebUI.getWindowTitle(), 'AlgoKelvin - Blog', false)
 
+WebUI.verifyElementNotHasAttribute(findTestObject('Page AlgoKelvin - Blog/head_bas_code'), 'Basic Programming', 20)
+
+'Close browser'
+WebUI.closeBrowser()
