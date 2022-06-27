@@ -17,9 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'To open browser with Goolge Chrome'
+'To open browser with Google Chrome'
 WebUI.openBrowser(GlobalVariable.URL)
 
 'Check Title Page Web'
 WebUI.verifyMatch(WebUI.getWindowTitle(), 'AlgoKelvin', false)
 
+'Click to Blog Page'
+WebUI.click(findTestObject('Page_AlgoKelvin/page_blog'))
+
+'Check Title Web \'Blog Page\''
+WebUI.verifyMatch(WebUI.getWindowTitle(), 'AlgoKelvin - Blog', false)
+
+WebUI.verifyElementNotHasAttribute(findTestObject('Page AlgoKelvin - Blog/head_bas_code'), 'Basic Programming', 20)
+
+'Close browser'
+WebUI.closeBrowser()
