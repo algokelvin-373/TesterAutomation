@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Kelvin Herwanda Tandrio'</initValue>
+      <name>SAMPLE_NAME</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

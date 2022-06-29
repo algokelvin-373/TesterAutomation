@@ -17,3 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Start run app'
+Mobile.startApplication('/Users/kelvin-tsm/Kelvin/MyProject/play-tester-automation/KatalonStudies/android-input-output-debug.apk', 
+    false)
+
+'Input Name Login'
+Mobile.sendKeys(findTestObject('page_input_login/edt_name_login'), GlobalVariable.SAMPLE_NAME, FailureHandling.STOP_ON_FAILURE)
+
+'Click Login to Show Data Login'
+Mobile.tap(findTestObject('page_input_login/btn_login'), 5)
+
+'Get Data Login from Input Data Name'
+def login_name = Mobile.getText(findTestObject('page_show_login/txt_login_name'), 5)
+
+'Verify Name Login'
+Mobile.verifyEqual(login_name, GlobalVariable.SAMPLE_NAME)
+
+'Close app'
+Mobile.closeApplication()
+
