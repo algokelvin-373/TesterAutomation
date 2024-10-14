@@ -23,7 +23,7 @@ import org.xbill.DNS.TXTRecord as Keys
 Mobile.startApplication(GlobalVariable.pathAPK, false)
 
 'Given Delay 5 Seconds'
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Create Object for Data EditText_InputNumber1'
 TestObject editTextNumber1 = findTestObject('EditText_InputNumber1')
@@ -44,7 +44,7 @@ TestObject btnPlus = findTestObject('Button_PlusOperator')
 Mobile.tap(btnPlus, 10)
 
 'Given Delay 2 Seconds'
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 'Create Object for Data TextView_Result'
 String txtResult = Mobile.getText(findTestObject('TextView_ResultOperator'), 10)
@@ -53,7 +53,7 @@ String txtResult = Mobile.getText(findTestObject('TextView_ResultOperator'), 10)
 assert txtResult == '700.0'
 
 'Given Delay 2 Seconds'
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

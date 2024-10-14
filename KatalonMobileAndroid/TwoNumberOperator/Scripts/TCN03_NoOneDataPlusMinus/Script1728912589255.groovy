@@ -15,42 +15,43 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.junit.Assert as Assert
 import org.openqa.selenium.Keys as Keys
-import org.xbill.DNS.TXTRecord as Keys
 
 'Start to open APK Two Number Operator'
 Mobile.startApplication(GlobalVariable.pathAPK, false)
 
-'Given Delay 5 Seconds'
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+'Given Delay 2 Seconds'
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Create Object for Data EditText_InputNumber1'
 TestObject editTextNumber1 = findTestObject('EditText_InputNumber1')
 
-'Set Value 500 for Data Number 1'
-Mobile.setText(editTextNumber1, '500', 10)
-
 'Create Object for Data EditText_InputNumber2'
 TestObject editTextNumber2 = findTestObject('EditText_InputNumber2')
 
-'Set Value 200 for Data Number 2'
-Mobile.setText(editTextNumber2, '200', 10)
-
+'Create Object for Data Button_PlusOperator'
 TestObject btnMinus = findTestObject('Button_MinusOperator')
 
+'Click Button Minus Operator'
 Mobile.tap(btnMinus, 10)
-
-'Given Delay 2 Seconds'
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Create Object for Data TextView_Result'
 String txtResult = Mobile.getText(findTestObject('TextView_ResultOperator'), 10)
 
-assert txtResult == '300.0'
+'Validate Result'
+assert txtResult == '0.0'
 
-'Given Delay 2 Seconds'
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+'Create Object for Data Button_PlusOperator'
+TestObject btnPlus = findTestObject('Button_PlusOperator')
+
+'Click Button Plus Operator'
+Mobile.tap(btnPlus, 10)
+
+'Create Object for Data TextView_Result'
+txtResult = Mobile.getText(findTestObject('TextView_ResultOperator'), 10)
+
+'Validate Result'
+assert txtResult == '0.0'
 
 Mobile.closeApplication()
 
