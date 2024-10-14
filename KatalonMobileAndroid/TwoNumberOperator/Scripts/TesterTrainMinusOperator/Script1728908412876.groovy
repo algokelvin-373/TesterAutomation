@@ -14,10 +14,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable
-
-import org.junit.Assert
-import org.openqa.selenium.Keys
+import internal.GlobalVariable as GlobalVariable
+import org.junit.Assert as Assert
+import org.openqa.selenium.Keys as Keys
 import org.xbill.DNS.TXTRecord as Keys
 
 'Start to open APK Two Number Operator'
@@ -38,19 +37,20 @@ TestObject editTextNumber2 = findTestObject('EditText_InputNumber2')
 'Set Value 200 for Data Number 2'
 Mobile.setText(editTextNumber2, '200', 10)
 
-TestObject btnPlus = findTestObject("Button_PlusOperator")
+TestObject btnMinus = findTestObject('Button_MinusOperator')
 
-Mobile.tap(btnPlus, 10)
+Mobile.tap(btnMinus, 10)
 
 'Given Delay 2 Seconds'
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Create Object for Data TextView_Result'
-String txtResult = Mobile.getText(findTestObject("TextView_ResultOperator"), 10)
+String txtResult = Mobile.getText(findTestObject('TextView_ResultOperator'), 10)
 
-assert txtResult == '700.0'
+assert txtResult == '300.0'
 
 'Given Delay 2 Seconds'
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+
