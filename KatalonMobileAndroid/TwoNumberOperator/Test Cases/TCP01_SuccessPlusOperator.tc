@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The Scenario of determining the result of minus between two numbers.</description>
+   <name>TCP01_SuccessPlusOperator</name>
+   <tag>#plusoperator</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aafaf1f6-4142-40f9-8d85-b9ad34c0d349</testCaseGuid>
+</TestCaseEntity>
