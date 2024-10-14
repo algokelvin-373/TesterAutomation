@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test Skenario for Plus Two Number</description>
-   <name>PlusTwoNumber</name>
-   <tag>#plustwonumberoperator</tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>618c61f4-8cd2-47a6-86ce-da7e6cbe477c</testCaseGuid>
-</TestCaseEntity>

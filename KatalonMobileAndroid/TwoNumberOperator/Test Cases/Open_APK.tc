@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Step for Open APK with delay 5 seconds</description>
-   <name>Open_APK</name>
-   <tag>#openapk</tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>772b66e2-3051-419a-90dc-e8c9eef24aca</testCaseGuid>
-</TestCaseEntity>
