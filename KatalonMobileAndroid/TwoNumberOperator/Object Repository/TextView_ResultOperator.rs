@@ -3,7 +3,7 @@
    <description></description>
    <name>TextView_ResultOperator</name>
    <tag></tag>
-   <elementGuidId>f0a0f917-70ac-49dd-8bc2-7d52e6f717df</elementGuidId>
+   <elementGuidId>d373d19a-2952-4739-b5ac-c42591f1426a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>

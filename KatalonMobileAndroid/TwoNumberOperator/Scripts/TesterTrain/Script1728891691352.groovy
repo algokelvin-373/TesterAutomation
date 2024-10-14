@@ -48,7 +48,7 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 'Create Object for Data TextView_Result'
 String txtResult = Mobile.getText(findTestObject("TextView_ResultOperator"), 10)
 
-println "Result Numeric: "+ result
+assert txtResult == '700.0'
 
 'Given Delay 2 Seconds'
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
