@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The Scenario which no have data number.</description>
+   <name>TCN03_NoOneDataPlusMinus</name>
+   <tag>#plusoperator #minusoperator #emptydata</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ff229d67-d8da-48ed-ab50-889780e36ed8</testCaseGuid>
+</TestCaseEntity>

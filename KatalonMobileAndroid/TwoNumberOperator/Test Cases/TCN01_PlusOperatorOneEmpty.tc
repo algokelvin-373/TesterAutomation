@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The Scenario which the one of number is empty for plus operator.</description>
+   <name>TCN01_PlusOperatorOneEmpty</name>
+   <tag>#plusoperator #emptydata</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>76eae408-8f2f-43cc-9d8e-10c65f16e1f4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Path APK</description>
+      <initValue>'D:\\AlgoKelvin\\My_Postingan\\2024\\Oktober 2024\\TesterAutomation\\KatalonMobileAndroid\\TwoNumberOperator-debug.apk'</initValue>
+      <name>pathAPK</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
