@@ -26,7 +26,7 @@ name_product = element_name_product.text
 click_detail_product = driver.find_element(By.XPATH, "//*[@id='zeus-root']/div/div[2]/div/div[2]/div[4]/div[1]/div[7]/a")
 click_detail_product.click()
 
-GlobalFunction.delay(5)
+GlobalFunction.delay(10)
 
 print(f"4. Increase Item for Product {name_product}")
 btn_increase_product = driver.find_element(By.XPATH, "//*[@id='pdpFloatingActions']/div[1]/div/button[2]")
@@ -37,9 +37,19 @@ for item in range(total_item_product - 1):
 GlobalFunction.delay(2)
 
 print(f"5. Decrease Item for Product {name_product}")
-btn_adding_product = driver.find_element(By.XPATH, "//*[@id='pdpFloatingActions']/div[1]/div/button[2]")
+btn_adding_product = driver.find_element(By.XPATH, "//*[@id='pdpFloatingActions']/div[1]/div/button[1]")
 total_item_product = 5
 for item in range(total_item_product - 1):
     btn_adding_product.click()
 
 GlobalFunction.delay(2)
+
+print("6. Delete All and Refresh to Home Page")
+GlobalFunction.delay(5)
+driver.get("https://www.tokopedia.com/")
+driver.refresh()
+
+GlobalFunction.delay(5)
+
+print("-----Finish-----")
+driver.close()

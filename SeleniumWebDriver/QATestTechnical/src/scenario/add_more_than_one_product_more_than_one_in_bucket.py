@@ -92,6 +92,16 @@ print(total_item_product_in_bucket)
 # if int(total_item_product_in_bucket) == total_item_product:
 #     print(f">> Total Item: {total_item_product} [MATCH]")
 
+print("12. Delete All and Refresh to Home Page")
+btn_delete_list_product = driver.find_element(By.XPATH, "//*[@id='__skipper']/div[2]/div/div/div[1]/div[1]/div[1]/div[2]/div/div/button")
+btn_delete_list_product.click()
+GlobalFunction.delay(5)
+btn_ready_delete = driver.find_element(By.XPATH, "/html/body/div[3]/div/div/div/div/button[2]")
+btn_ready_delete.click()
+GlobalFunction.delay(5)
+driver.get("https://www.tokopedia.com/")
+driver.refresh()
+
 GlobalFunction.delay(5)
 
 print("-----Finish-----")
