@@ -12,6 +12,9 @@ class SuccessAddMoreThanOneProductMoreThanOneItemsInBuckets:
         self.__driver = GlobalFunction.open_chrome("https://www.tokopedia.com/")
         GlobalFunction.delay(5)
 
+    def get_driver(self):
+        return self.__driver
+
     def main(self, list_search_data):
         count = len(list_search_data)
         self.__count_product = count
@@ -50,6 +53,40 @@ class SuccessAddMoreThanOneProductMoreThanOneItemsInBuckets:
         GlobalFunction.delay(5)
 
         return self.close_web()
+
+    def main_without_close_web(self, list_search_data):
+        count = len(list_search_data)
+        self.__count_product = count
+        index = 1
+        for data in list_search_data:
+            self.add_product(data)
+            GlobalFunction.delay(5)
+
+            self.go_to_detail_product()
+            GlobalFunction.delay(5)
+
+            self.set_item_product(3)  # Set 3 items every product
+            GlobalFunction.delay(5)
+
+            self.add_in_bucket()
+            GlobalFunction.delay(5)
+
+            self.close_frame()
+            GlobalFunction.delay(5)
+
+            # if index < count:
+            #     index += 1
+            #     self.close_frame()
+            #     GlobalFunction.delay(5)
+            # else:
+            #     self.checklist_product_in_bucket()
+            #     GlobalFunction.delay(5)
+
+        self.checklist_product_in_bucket()
+        GlobalFunction.delay(5)
+
+        self.list_product_in_bucket()
+        GlobalFunction.delay(5)
 
     def add_product(self, search_data):
         print(f"2. Add Sample Product from Result Search '{search_data}'")

@@ -6,11 +6,18 @@ from src.utils.global_function import GlobalFunction
 class SuccessAddMoreThanOneProductInBucket:
     def __init__(self):
         self.__name_product = ""
+        self.__list_name_product = []
         self.__count_product = 0
 
         print("1. Open Web Chrome (Has been login)")
         self.__driver = GlobalFunction.open_chrome("https://www.tokopedia.com/")
         GlobalFunction.delay(5)
+
+    def get_driver(self):
+        return self.__driver
+
+    def get_list_name_product(self):
+        return self.__list_name_product
 
     def main(self, list_search_data):
         count = len(list_search_data)
@@ -48,27 +55,48 @@ class SuccessAddMoreThanOneProductInBucket:
 
         return self.close_web()
 
+    def main_without_close_web(self, list_search_data):
+        count = len(list_search_data)
+        self.__count_product = count
+        index = 1
+        for data in list_search_data:
+            self.add_product(data)
+            GlobalFunction.delay(5)
+
+            self.go_to_detail_product()
+            GlobalFunction.delay(5)
+
+            self.add_in_bucket()
+            GlobalFunction.delay(5)
+
+            self.close_frame()
+            GlobalFunction.delay(5)
+
+        self.checklist_product_in_bucket()
+        GlobalFunction.delay(5)
+
+        self.list_product_in_bucket()
+        GlobalFunction.delay(5)
+
     def add_product(self, search_data):
         print(f"2. Add Sample Product from Result Search '{search_data}'")
-        input_search_product = self.__driver.find_element(By.XPATH,
-                                                          "//*[@id='header-main-wrapper']/div[2]/div[2]/div[1]/div/div/div/input")
+        input_search_product = self.__driver.find_element(By.XPATH,"//*[@id='header-main-wrapper']/div[2]/div[2]/div[1]/div/div/div/input")
         input_search_product.send_keys(search_data)
         GlobalFunction.delay(5)
-        click_search_product = self.__driver.find_element(By.XPATH,
-                                                          "//*[@id='header-main-wrapper']/div[2]/div[2]/div[3]/a[1]")
+        click_search_product = self.__driver.find_element(By.XPATH,"//*[@id='header-main-wrapper']/div[2]/div[2]/div[3]/a[1]")
         click_search_product.click()
 
     def go_to_detail_product(self):
         print("3. Choose and Go to Details Product")
-        element_name_product = self.__driver.find_element(By.XPATH,"//*[@id='zeus-root']/div/div[2]/div/div[2]/div[4]/div[1]/div[3]/a/div[1]/div[2]/div[1]/span")
+        element_name_product = self.__driver.find_element(By.XPATH,"//*[@id='zeus-root']/div/div[2]/div/div[2]/div[4]/div[1]/div[1]/a/div[1]/div[2]/div[1]/span")
         self.__name_product = element_name_product.text
-        click_detail_product = self.__driver.find_element(By.XPATH,"//*[@id='zeus-root']/div/div[2]/div/div[2]/div[4]/div[1]/div[3]/a")
+        self.__list_name_product.append(self.__name_product)
+        click_detail_product = self.__driver.find_element(By.XPATH,"//*[@id='zeus-root']/div/div[2]/div/div[2]/div[4]/div[1]/div[1]/a")
         click_detail_product.click()
 
     def add_in_bucket(self):
         print(f"4. Add Product {self.__name_product} to Bucket")
-        btn_add_to_bucket = self.__driver.find_element(By.XPATH,
-                                                       "//*[@id='pdpFloatingActions']/div[4]/div[1]/button[1]")
+        btn_add_to_bucket = self.__driver.find_element(By.XPATH,"//*[@id='pdpFloatingActions']/div[4]/div[1]/button[1]")
         btn_add_to_bucket.click()
 
     def close_frame(self):

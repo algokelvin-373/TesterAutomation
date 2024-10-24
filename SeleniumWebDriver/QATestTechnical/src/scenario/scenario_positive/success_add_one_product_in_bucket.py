@@ -11,6 +11,12 @@ class SuccessAddOneProductInBucket:
         self.__driver = GlobalFunction.open_chrome("https://www.tokopedia.com/")
         GlobalFunction.delay(5)
 
+    def get_driver(self):
+        return self.__driver
+
+    def get_name_product(self):
+        return self.__name_product
+
     def main(self, search_data):
         self.add_product(search_data)
         GlobalFunction.delay(5)
@@ -28,6 +34,19 @@ class SuccessAddOneProductInBucket:
         GlobalFunction.delay(5)
 
         return self.close_web()
+
+    def main_without_close_web(self, search_data):
+        self.add_product(search_data)
+        GlobalFunction.delay(5)
+
+        self.go_to_detail_product()
+        GlobalFunction.delay(5)
+
+        self.add_in_bucket()
+        GlobalFunction.delay(5)
+
+        self.list_product_in_bucket()
+        GlobalFunction.delay(5)
 
     def add_product(self, search_data):
         print(f"2. Add Sample Product from Result Search '{search_data}'")
