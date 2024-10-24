@@ -41,7 +41,7 @@ class FailedAddProductIfTheProductIsEmpty:
     def increase_items_product(self):
         print(f"4. Increase Item for Product {self.__name_product}")
         btn_increase_product = self.__driver.find_element(By.XPATH, "//*[@id='pdpFloatingActions']/div[1]/div/button[2]")
-        total_item_product = 200
+        total_item_product = 1000  # add 1000 items
         for item in range(total_item_product - 1):
             if btn_increase_product.is_enabled():
                 btn_increase_product.click()
