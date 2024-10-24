@@ -20,6 +20,8 @@ if __name__ == '__main__':
     print(f"Skenario 2: Gagal Checkout dengan Kondisi Awal Ada Produk di Keranjang lalu Hapus Semua Produk di Keranjang. \t\t\t [HASIL: {scenario_negative_2.main(list_search_product)}]")
     GlobalFunction.delay(5)
 
+    print("\n\n")
+
     # Scenario 3
     print("Skenario 3: Gagal Dapat List Produk dan Menampilkan Pesan 'Produk tidak ditemukan'. \t\t\t [PROSES TESTING]")
     search_product = "1234567890abcde"
